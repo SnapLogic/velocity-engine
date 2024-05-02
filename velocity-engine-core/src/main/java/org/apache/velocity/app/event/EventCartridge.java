@@ -31,6 +31,7 @@ import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
@@ -441,5 +442,16 @@ public class EventCartridge
         {
             return false;
         }
+    }
+
+    /**
+     * Iterate through all the stored ReferenceInsertionEventHandler objects
+     *
+     * @return iterator of handler objects, null if there are not handlers
+     * @since 1.5
+     */
+    public Iterator getReferenceInsertionEventHandlers()
+    {
+        return referenceHandlers.size() == 0 ? null : referenceHandlers.iterator();
     }
 }
