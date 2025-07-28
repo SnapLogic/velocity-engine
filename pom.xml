@@ -31,7 +31,7 @@
     </parent>
 
     <artifactId>velocity-engine-parent</artifactId>
-    <version>2.4.1-snap</version>
+    <version>2.4.1.1-snap</version>
 
     <name>Apache Velocity</name>
     <url>http://velocity.apache.org/engine/devel/</url>
